@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Bubblegum";
+    src: url(../fonts/BubblegumSans-Regular.otf);
+}
+/* Variables globales personalizadas para curso math*/
+:root{
+    /* Paleta colores math */
+    --math-primary-color: #0B7570;
+    --math-secondary-color: #229F99;
+    --math-white-color: #F2F2F7;
+    --math-black-color: #1C1C1E;
+    --math-cites-color: #AEAEB2;
+    --math-danger-color: #FA114F;
+    --math-suggestion-color: #0071A4;
+    /* Colores de grados */
+    --math-grado-1: #229F99;
+    --math-grado-2: #FA114F;
+    --math-grado-3: #FFE014;
+    --math-grado-4: #BF5AF2;
+    --math-grado-5: #FF9F0A;
+    --math-grado-6: #0071A4;
+
+    /* Colores pinsa */
+    --pinsa-primary--color: #7648E0;
+
+}
+/******************** ESTILOS DE MATH ********************/
+/* Letra bubble gum */
+.bubble-gum{
+    font-family: Bubblegum;
+}
+/* Colores de fondo */
+.bg-math-primary{
+    background-color: var(--math-primary-color);
+}
+.bg-math-secondary{
+    background-color: var(--math-secondary-color);
+}
+.bg-math-white{
+    background-color: var(--math-white-color);
+}
+.bg-math-black{
+    background-color: var(--math-black-color);
+}
+.bg-math-cites{
+    background-color: var(--math-cites-color);
+}
+.bg-math-danger{
+    background-color: var(--math-danger-color);
+}
+.bg-math-suggestion{
+    background-color: var(--math-suggestion-color);
+}
+/* Colores de texto */
+.text-math-primary{
+    color: var(--math-primary-color);
+}
+.text-math-secondary{
+    color: var(--math-secondary-color);
+}
+.text-math-white{
+    color: var(--math-white-color);
+}
+.text-math-black{
+    color: var(--math-black-color);
+}
+.text-math-cites{
+    color: var(--math-cites-color);
+}
+.text-math-danger{
+    color: var(--math-danger-color);
+}
+.text-math-suggestion{
+    color: var(--math-suggestion-color);
+}
+/* Colores de borde de grados */
+.border-grado-1{
+    border: 3px solid var(--math-grado-1);
+}
+.border-grado-2{
+    border: 3px solid var(--math-grado-2);
+}
+.border-grado-3{
+    border: 3px solid var(--math-grado-3);
+}
+.border-grado-4{
+    border: 3px solid var(--math-grado-4);
+}
+.border-grado-5{
+    border: 3px solid var(--math-grado-5);
+}
+.border-grado-6{
+    border: 3px solid var(--math-grado-6);
+}
+/* Colores fondo de grados */
+.bg-grado-1{
+    background-color: var(--math-grado-1)
+}
+.bg-grado-2{
+    background-color: var(--math-grado-2)
+}
+.bg-grado-3{
+    background-color: var(--math-grado-3)
+}
+.bg-grado-4{
+    background-color: var(--math-grado-4)
+}
+.bg-grado-5{
+    background-color: var(--math-grado-5)
+}
+.bg-grado-6{
+    background-color: var(--math-grado-6)
+}
+/* Colores texto de grados */
+.text-grado-1{
+    color: var(--math-grado-1)
+}
+.text-grado-2{
+    color: var(--math-grado-2)
+}
+.text-grado-3{
+    color: var(--math-grado-3)
+}
+.text-grado-4{
+    color: var(--math-grado-4)
+}
+.text-grado-5{
+    color: var(--math-grado-5)
+}
+.text-grado-6{
+    color: var(--math-grado-6)
+}
+
+/******************** ESTILOS DE PINSA ********************/
+/* Colores de fondo */
+.bg-pinsa-primary {
+    background-color: var(--pinsa-primary--color)
+}
+/* Colores de texto */
+.text-pinsa-primary {
+    color: var(--pinsa-primary--color)
+}
+
+/******************** ESTILOS GENERALES ********************/
+/* Tamaño correcto de los svg/iconos */
+.svg-size-xxx{
+    width: 12.5em;
+}
+.svg-size-xxl{
+    width: 7.5em;
+}
+.svg-size-xl{
+    width: 5em;
+}
+.svg-size-lg{
+    width: 2.5em;
+}
+.svg-size-m{
+    width: 2em;
+}
+.svg-size-s{
+    width: 1.5em;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.al-reves{
+    transform: scaleX(-1);
+}
+.banner-tema{
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.glass{
+    background: rgba(255,255,255,0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18)
+}
+.text-shadow-black{
+    text-shadow: 2px 2px 3px var(--math-black-color);
+}
