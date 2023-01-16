@@ -164,21 +164,29 @@
 .overflow-y-scroll {
     overflow-y: scroll;
 }
+/* Invertir elementos verticalmente */
 .al-reves{
     transform: scaleX(-1);
 }
+/* Estilos para portadas de temas */
 .banner-tema{
     height: 350px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
+/* Efecto glass de contenedores */
 .glass{
     background: rgba(255,255,255,0.30);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.18)
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(28, 28, 30, 0.35)
 }
+/* Sombra para textos importantes */
 .text-shadow-black{
     text-shadow: 2px 2px 3px var(--math-black-color);
+}
+.text-shadow-white{
+    text-shadow: 3px 3px 2px var(--math-white-color);
 }
