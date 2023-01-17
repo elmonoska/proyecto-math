@@ -58,16 +58,27 @@
           <picture class="justify-content-center mx-auto mb-2">
             <img class="svg-size-xxx fs-3" src="../../img/math/grado-1/numeros-1-a-9.svg" alt="Imagen ejemplo: numeros del 1 al 9">
           </picture>
-          <p>Y, a partir de estas simbolos es posible escribir cualquier número que se nos ocurra.</p>
+          <p>Apartir de estas simbolos es posible escribir cualquier número que se nos ocurra.</p>
           <p><cite class="text-math-cites">"Los numeros son la base de todas las matematicas."</cite></p>
           <p>Para realizar un ejercicio puedes consultar la pagina <kbd>{{numero-pagina}}</kbd> de tu libro: Grado 1.</p>
+          
+          <!-- Pruebas con formulario de google -->
+          <p>↓ Esta es una prueba, no tomar en cuenta ↓</p>
 
-          <!-- Google forms: Numeros naturales grado 1 -->
-          <iframe class="container-fluid bg-info mb-2 rounded"
-           src="https://docs.google.com/forms/d/e/1FAIpQLSdBveZNjvzHMpjq_6JdGQKye1W0iCHQUEYm7TD3r2r1SD-gLg/viewform?embedded=true" width="640" height="2266" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          <img id="btnAudio" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">
+          <audio id="audioPlayer" src="../../audio/music/Dogs and Cats.mp3">Tu navegador no acepta los audios</audio>
+          <script>
+            const btnAudio = document.querySelector('#btnAudio')
+            const audioPlayer = document.querySelector('#audioPlayer')
+            btnAudio.addEventListener('click', () => {
+              audioPlayer.play()
+            })
+          </script>
 
-          <a href="https://forms.gle/ePpczZpBXhgsh2Vz8" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">Da clic para hacer un ejercicio</a>
           <p><cite class="text-math-cites">Recuerda contar con internet para hacer el ejercicio</cite></p>
+          <a href="https://forms.gle/ePpczZpBXhgsh2Vz8" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">Da clic para hacer un ejercicio</a>
+          <!-- Fin de pruebas con formulario de google -->
+
           <a href="" class="btn btn-secondary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">leccion anterior</a>
           <a href="" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">siguiente leccion</a>
         
