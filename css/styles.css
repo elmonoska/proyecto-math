@@ -190,3 +190,6 @@
 .text-shadow-white{
     text-shadow: 3px 3px 2px var(--math-white-color);
 }
+#btnAudio{
+    cursor: pointer;
+}
