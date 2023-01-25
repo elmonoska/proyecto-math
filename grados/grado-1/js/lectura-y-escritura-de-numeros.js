@@ -1,6 +1,6 @@
 import { numeroALetras } from '../../../js/numeros-a-letras.js';
 import { generadorNumeros } from '../../../js/numeros-aleatorios.js';
-
+import { generadorNumerosSinDecenas } from '../../../js/numeros-aleatorios.js';
 
 //Genera los numeros de la tabla table-1-a-9
 const tbodyTable1a9 = document.querySelector('#table-1-a-9 tbody');
@@ -34,7 +34,7 @@ for (let i = 11; i <= 29; i++) {
 
 //Genera 10 numeros aleatorios en la tabla table-30-hacia-arriba
 const tbodyTable30HaciaArriba = document.querySelector('#table-30-hacia-arriba tbody');
-const numeros30a99 = generadorNumeros(10,30,99)
+const numeros30a99 = generadorNumerosSinDecenas(10,30,99)
 for (let i = 0; i < 10; i++) {
     const tr = document.createElement('tr');
     tbodyTable30HaciaArriba.appendChild(tr).innerHTML = `
@@ -49,6 +49,12 @@ const numeroEnTexto = document.querySelector('#numeroEnTexto')
 const btnConsultaNumero = document.querySelector('#consultaNumero')
 btnConsultaNumero.addEventListener('click', (e) => {
     e.preventDefault()
-    numeroEnTexto.textContent = `${numeroALetras(inputNumeroIntroducido.value)}`
-    
+    if(isNaN(inputNumeroIntroducido.value)){
+        numeroEnTexto.textContent = 'Debes introducir solamente numeros'
+    }else{
+        numeroEnTexto.textContent = `${numeroALetras(inputNumeroIntroducido.value)}`   
+    }
 })
+
+
+
