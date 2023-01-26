@@ -35,13 +35,13 @@ for (let i = 11; i <= 29; i++) {
 //Genera 10 numeros aleatorios en la tabla table-30-hacia-arriba
 const tbodyTable30HaciaArriba = document.querySelector('#table-30-hacia-arriba tbody');
 const numeros30a99 = generadorNumerosSinDecenas(10,30,99)
-for (let i = 0; i < 10; i++) {
+numeros30a99.forEach( numero => {
     const tr = document.createElement('tr');
     tbodyTable30HaciaArriba.appendChild(tr).innerHTML = `
-    <td><span class="text-math-danger bubble-gum fs-2 align-middle">${numeros30a99[i]}</span></td>
-    <td class="align-middle text-capitalize">${numeroALetras(numeros30a99[i])}</td>
-    `;
-}
+    <td><span class="text-math-danger bubble-gum fs-2 align-middle">${numero}</span></td>
+    <td class="align-middle text-capitalize">${numeroALetras(numero)}</td>
+    `
+})
 
 //Genera la escritura del numero introducido por el usuario
 const inputNumeroIntroducido = document.querySelector('#numeroIntroducido')
@@ -52,7 +52,7 @@ btnConsultaNumero.addEventListener('click', (e) => {
     if(isNaN(inputNumeroIntroducido.value)){
         numeroEnTexto.textContent = 'Debes introducir solamente numeros'
     }else{
-        numeroEnTexto.textContent = `${numeroALetras(inputNumeroIntroducido.value)}`   
+        numeroEnTexto.textContent = `${numeroALetras(inputNumeroIntroducido.value)}.`   
     }
 })
 
