@@ -31,7 +31,6 @@ export class Cuestionario {
      * @param {string} respuesta la respuesta de la pregunta
      */
     adivinar(respuesta){
-        console.log(respuesta)
         if(this.obtenerPreguntaActual().validarRespuesta(respuesta)){
             this.calificacion++;
         }

@@ -3,8 +3,9 @@ import { Interfaz } from "../../../js/Interfaz.js";
 import { Pregunta } from "../../../js/Pregunta.js";
 import { preguntasPrimerTema } from "../preguntas-en-general.js";
 
-const nuevasPreguntas = preguntasPrimerTema.map(pregunta => {
-    return new Pregunta(pregunta.pregunta, pregunta.opciones, pregunta.respuesta);
+const preguntasDesordenadas = preguntasPrimerTema.sort(() => Math.random()-0.5)
+const nuevasPreguntas = preguntasDesordenadas.map(pregunta => {
+    return new Pregunta(pregunta.pregunta, pregunta.opciones.sort(()=> Math.random()-0.5), pregunta.respuesta);
 })
 
 /**
@@ -14,14 +15,14 @@ const nuevasPreguntas = preguntasPrimerTema.map(pregunta => {
  */
 function recargarPagina(cuestionario, interfaz) {
     if (cuestionario.haFinalizado()) {
-        console.log(cuestionario.calificacion)
-        interfaz.muestraCalificacion(cuestionario.calificacion)
+        interfaz.muestraCalificacion((cuestionario.calificacion/nuevasPreguntas.length)*10)
     } else {
-
         interfaz.muestraPregunta(cuestionario.obtenerPreguntaActual().pregunta);
         interfaz.muestrasOpciones(cuestionario.obtenerPreguntaActual().opciones, (opcionActual) => {
             cuestionario.adivinar(opcionActual)
-            recargarPagina(cuestionario, interfaz)
+            setTimeout(() => {
+                recargarPagina(cuestionario, interfaz)
+            }, 500);
         })
         interfaz.muestraProgreso(cuestionario.preguntaIndice + 1, nuevasPreguntas.length)
     }
@@ -33,4 +34,11 @@ function menu() {
     recargarPagina(cuestionario, interfaz)
 }
 
-menu()
+const empezarCuestionario = document.querySelector('#empezar')
+const instrucciones = document.querySelector('#instrucciones')
+empezarCuestionario.addEventListener('click', () => {
+    setTimeout(() => {
+        instrucciones.classList.add('d-none')
+        menu();
+    }, 500);
+})

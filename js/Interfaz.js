@@ -22,7 +22,7 @@ export class Interfaz {
             {
                 const button = document.createElement('button');
                 button.textContent = opciones[i]
-                button.className = 'boton'
+                button.className = 'btn btn-light p-4 w-75 border border-dark border-opacity-75 shadow my-2 text-capitalize'
                 button.addEventListener('click', () => callback(opciones[i]))
 
                 contenedorOpciones.appendChild(button)
@@ -36,8 +36,11 @@ export class Interfaz {
      */
     muestraCalificacion(calificacion){
         const cuestionarioFinalizadoHTML = `
-        <h1>Calificacion</h1>
-        <h2>Tu calificacion fue de: ${calificacion}</h2>
+        <h1 class="text-center bubble-gum display-1 text-danger text-stroke-black">Has finalizado el cuestionario.</h1>
+        <hr>
+        <h2 class="text-center">Tu calificacion final es de: <strong class="text-danger text-stroke-black bubble-gum display-3">${calificacion}</strong></h2>
+        <a href="javascript:location.reload()"
+          class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 mx-auto">volver a intentar</a>
         `
         const cuestionario = document.querySelector('#cuestionario')
         cuestionario.innerHTML = cuestionarioFinalizadoHTML

@@ -181,7 +181,7 @@ body{
 }
 /* Efecto glass de contenedores */
 .glass{
-    background: rgba(255,255,255,0.30);
+    background: rgba(110, 97, 97, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(3px);
     border: 1px solid rgba(28, 28, 30, 0.35)
@@ -192,6 +192,11 @@ body{
 }
 .text-shadow-white{
     text-shadow: 3px 3px 2px var(--math-white-color);
+}
+/* Borde para las letras */
+.text-stroke-black{
+    -webkit-text-stroke-color: var(--math-black-color);
+    -webkit-text-stroke-width: 2px;
 }
 #btnAudio{
     cursor: pointer;

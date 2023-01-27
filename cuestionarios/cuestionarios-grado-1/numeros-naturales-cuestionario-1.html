@@ -13,22 +13,53 @@
 </head>
 
 <body class="bg-dark text-math-black">
+      <!-- Header -->
+  <header class="sticky-top">
+    <!-- Barra navegacion -->
+    <nav class="bg-math-primary text-math-white p-3 d-flex justify-content-between">
+      <picture>
+        <a href="../../grados/grado-1/numeros-naturales.html">
+          <img class="img-fluid" src="../../img/math/icons/back-color.svg" alt="Flecha hacia atras">
+        </a>
+      </picture>
+      <p class="display-6 text-nowrap my-auto bubble-gum text-uppercase text-shadow-black">{{Curso de matematicas}}</p>
+    </nav>
+    <!-- Fin de barra de navegacion -->
+  </header>
+  <!-- Fin de header -->
+
+    <!-- Contenido principal -->
     <main class="container my-5">
-        <a href="../../index.html">Regresar index</a>
-        <section class="container-fluid bg-math-white border rounded"
-        id="cuestionario">
-            <h1 class="text-center text-capitalize bubble-gum display-1">cuestionario de numeros naturales.</h1>
+        <!-- Cuestionario -->
+        <section class="container-fluid bg-math-white border rounded d-flex flex-column" id="cuestionario">
+            <h1 class="text-center text-capitalize bubble-gum display-2 text-grado-1 text-stroke-black">cuestionario de numeros naturales.</h1>
             <hr>
-            <h2 id="pregunta">¿Pregunta?</h2>
+            <h4 class="text-capitalize text-center" id="pregunta">
+                <!-- Generacion de pregunta automatica -->
+            </h4>
 
-            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2"
-            id="opciones">
+            <article id="instrucciones" 
+            class="mx-auto d-flex flex-column justify-content-center align-items-center">
+                <p>En este cuestionario, puedes poner a prueba lo que aprendiste en la leccion <strong class="text-math-danger">numeros naturales</strong>.</p>
+                <p>Tendras una seria de preguntas en donde tendras que seleccionar la respuesta correcta.</p>
+                <p class="text-center text-primary display-4"><strong>¡Buena suerte! 🙂</strong></p>
+                <button id="empezar" 
+                class="btn btn-info text-white text-shadow-black bubble-gum fs-1 border border-opacity-75 border-dark w-75 mx-auto rounded p-2 shadow">
+                ¡COMENZAR!</button>
+            </article>
 
+
+            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2" id="opciones">
+                <!-- Se generan en automatico las opciones con botones js -->
             </article>
             <hr>
-            <p class="text-center" id="progreso">Pregunta x de y</p>
+            <p class="text-center text-dark fs-5" id="progreso">
+
+            </p>
 
         </section>
+        <!-- Fin de  Cuestionario -->
+
     </main>
     <!-- Fin de contenido principal -->
     <!-- Pie de pagina -->

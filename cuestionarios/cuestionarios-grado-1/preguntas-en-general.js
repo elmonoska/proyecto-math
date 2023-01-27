@@ -7,7 +7,7 @@ export const preguntasPrimerTema = [
             'word',
             'vscode',
             'prueba',
-            'sublime',
+            'sublime text',
             'jetbrains'
         ],
         respuesta: 'word',
