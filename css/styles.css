@@ -142,6 +142,9 @@
 }
 
 /******************** ESTILOS GENERALES ********************/
+body{
+    transition: all .25s;
+}
 /* Tamaño correcto de los svg/iconos */
 .svg-size-xxx{
     width: 12.5em;

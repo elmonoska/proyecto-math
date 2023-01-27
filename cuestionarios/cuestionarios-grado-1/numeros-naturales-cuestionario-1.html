@@ -14,22 +14,19 @@
 
 <body class="bg-dark text-math-black">
     <main class="container my-5">
-        <section class="container-fluid bg-math-white border rounded">
-            <a href="../../index.html">Regresar index</a>
+        <a href="../../index.html">Regresar index</a>
+        <section class="container-fluid bg-math-white border rounded"
+        id="cuestionario">
             <h1 class="text-center text-capitalize bubble-gum display-1">cuestionario de numeros naturales.</h1>
             <hr>
-            <h2>¿Pregunta?</h2>
-            <picture>
-                <img class="img-fluid border rounded" src="../../img/logo-principal.jpg" alt="">
-            </picture>
-            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2">
-                <button class="btn btn-light w-75">Opcion 1</button>
-                <button class="btn btn-light w-75">Opcion 2</button>
-                <button class="btn btn-light w-75">Opcion 3</button>
-                <button class="btn btn-light w-75">Opcion 4</button>
+            <h2 id="pregunta">¿Pregunta?</h2>
+
+            <article class="d-flex flex-column gap-2 justify-content-center align-items-center my-2"
+            id="opciones">
+
             </article>
             <hr>
-            <p class="text-center">Pregunta x de y</p>
+            <p class="text-center" id="progreso">Pregunta x de y</p>
 
         </section>
     </main>
@@ -51,9 +48,8 @@
 
 </body>
 <!-- numeros-naturales-cuestionario.js -->
-<script type="module" src="./js/numeros-naturales-cuestionario-1.js"></script>
-<!-- constructor cuestionario.js -->
-<script type="module" src="../../js/cuestionario.js"></script>
+<script type="module" src="./js/numeros-naturales.js"></script>
+
 <!-- Bootstrap 5.2.3 -->
 <script src="../../js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->
