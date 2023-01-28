@@ -198,6 +198,69 @@ body{
     -webkit-text-stroke-color: var(--math-black-color);
     -webkit-text-stroke-width: 2px;
 }
+
+/* pruebaspara un boton de audio */
 #btnAudio{
     cursor: pointer;
+}
+/******************** ANIMACIONES SENCILLAS ********************/
+.zoomInOut{
+    animation-name: zoomInOut;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.balance{
+    animation-name: balance;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+.floating{
+    animation-name: floating;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zoomInOut {
+    0%{
+        transform: scale(1.02);
+    }
+    25%{
+        transform: scale(1.04);
+    }
+    50%{
+        transform: scale(1.06);
+    }
+    75%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1.02);
+    }
+    
+}
+@keyframes balance {
+    0%{
+        transform: rotate(0deg);
+    }25%{
+        transform: rotate(-1deg);
+    }50%{
+        transform: rotate(0deg);
+    }75%{
+        transform: rotate(1deg);   
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }

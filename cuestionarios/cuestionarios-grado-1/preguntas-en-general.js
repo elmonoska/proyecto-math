@@ -1,48 +1,51 @@
-/* Preguntas del primer tema */
-export const preguntasPrimerTema = [
+/**
+ * -------------------------------------------------------------------
+ * Preguntas numeros naturales 1er grado
+ * -------------------------------------------------------------------
+ *  */ 
+export const preguntasNumerosNaturalesGrado1 = [
     {
-        pregunta: 'cual de las siguientes opciones no es un editor de codigo?',
+        pregunta: '¿que son los numeros naturales?',
         opciones: [
-            'vim',
-            'word',
-            'vscode',
-            'prueba',
-            'sublime text',
-            'jetbrains'
+            'simbolos que nos permiten contar cosas',
+            'dibujos',
+            'formas geometricas',
+            'signos para comunicarnos',
         ],
-        respuesta: 'word',
+        respuesta: 'simbolos que nos permiten contar cosas',
+        img: '../../img/math/portadas-temas/grado-1/01_numeros-naturales.png',
     },
     {
-        pregunta: 'que lenguaje no es orientado a objetos?',
+        pregunta: '¿quienes crearon los numeros naturales?',
         opciones: [
-            'java',
-            'haskell',
-            'c++',
-            'python',
-            'js'
+            'los seremos humanos',
+            'los alienigenas',
+            'los perros',
+            'el maestro',
         ],
-        respuesta: 'haskell',
+        respuesta: 'los seremos humanos',
+        img: '../../img/math/portadas-temas/grado-1/01_numeros-naturales.png',
     },
     {
-        pregunta: 'que lenguaje no sirve para estilizar sitios web?',
+        pregunta: '¿podemos usar los numeros naturales para contar cualquier cosa?',
         opciones: [
-            'js',
-            'stylus',
-            'less',
-            'sass',
-            'css'
+            'si',
+            'no',
+            'solo para contar manzanas',
+            'solo se usan en matematicas',
         ],
-        respuesta: 'js',
+        respuesta: 'si',
+        img: '../../img/math/portadas-temas/grado-1/01_numeros-naturales.png',
     },
     {
-        pregunta: 'cuanto es 2+2?',
+        pregunta: '',
         opciones: [
-            '1',
-            '2',
-            '31',
-            '4',
-            '5'
+            '',
+            '',
+            '',
+            '',
         ],
-        respuesta: '4',
+        respuesta: '',
+        img: '../../img/math/portadas-temas/grado-1/01_numeros-naturales.png',
     },
 ]

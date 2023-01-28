@@ -13,6 +13,15 @@ export class Interfaz {
 
     /**
      * 
+     * @param {string} img la imagen de cada pregunta
+     */
+    muestraImg(img){
+        const imgPregunta = document.querySelector('#imgPregunta');
+        imgPregunta.src = img;
+    }
+
+    /**
+     * 
      * @param {string[]} opciones las opciones de la pregunta
      */
     muestrasOpciones(opciones, callback) {

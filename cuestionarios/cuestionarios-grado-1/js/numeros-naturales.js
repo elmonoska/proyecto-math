@@ -1,11 +1,11 @@
 import { Cuestionario } from "../../../js/Cuestionario.js";
 import { Interfaz } from "../../../js/Interfaz.js";
 import { Pregunta } from "../../../js/Pregunta.js";
-import { preguntasPrimerTema } from "../preguntas-en-general.js";
+import { preguntasNumerosNaturalesGrado1 } from "../preguntas-en-general.js";
 
-const preguntasDesordenadas = preguntasPrimerTema.sort(() => Math.random()-0.5)
+const preguntasDesordenadas = preguntasNumerosNaturalesGrado1.sort(() => Math.random()-0.5)
 const nuevasPreguntas = preguntasDesordenadas.map(pregunta => {
-    return new Pregunta(pregunta.pregunta, pregunta.opciones.sort(()=> Math.random()-0.5), pregunta.respuesta);
+    return new Pregunta(pregunta.pregunta, pregunta.opciones.sort(()=> Math.random()-0.5), pregunta.respuesta, pregunta.img);
 })
 
 /**
@@ -15,9 +15,10 @@ const nuevasPreguntas = preguntasDesordenadas.map(pregunta => {
  */
 function recargarPagina(cuestionario, interfaz) {
     if (cuestionario.haFinalizado()) {
-        interfaz.muestraCalificacion((cuestionario.calificacion/nuevasPreguntas.length)*10)
+        interfaz.muestraCalificacion(cuestionario.calificacion)
     } else {
         interfaz.muestraPregunta(cuestionario.obtenerPreguntaActual().pregunta);
+        interfaz.muestraImg(cuestionario.obtenerPreguntaActual().img);
         interfaz.muestrasOpciones(cuestionario.obtenerPreguntaActual().opciones, (opcionActual) => {
             cuestionario.adivinar(opcionActual)
             setTimeout(() => {
