@@ -1,6 +1,6 @@
-import { Cuestionario } from "../../../js/Cuestionario.js";
-import { Interfaz } from "../../../js/Interfaz.js";
-import { Pregunta } from "../../../js/Pregunta.js";
+import { Cuestionario } from "../../Models/Cuestionario.js";
+import { Interfaz } from "../../Models/Interfaz.js";
+import { Pregunta } from "../../Models/Pregunta.js";
 import { preguntasNumerosNaturalesGrado1 } from "../preguntas-en-general.js";
 
 const preguntasDesordenadas = preguntasNumerosNaturalesGrado1.sort(() => Math.random()-0.5)

@@ -204,19 +204,19 @@ body{
     cursor: pointer;
 }
 /******************** ANIMACIONES SENCILLAS ********************/
-.zoomInOut{
+.zoomInOut, .zoomInOutHover:hover{
     animation-name: zoomInOut;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
-.balance{
+.balance, .balanceHover:hover{
     animation-name: balance;
     animation-timing-function: linear;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
-.floating{
+.floating, .floatingHover:hover{
     animation-name: floating;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -238,7 +238,23 @@ body{
     100%{
         transform: scale(1.02);
     }
-    
+}
+@keyframes zoomInOutHover {
+    0%{
+        transform: scale(1.02);
+    }
+    25%{
+        transform: scale(1.04);
+    }
+    50%{
+        transform: scale(1.06);
+    }
+    75%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1.02);
+    }
 }
 @keyframes balance {
     0%{
@@ -253,7 +269,31 @@ body{
         transform: rotate(0deg);
     }
 }
+@keyframes balanceHover {
+    0%{
+        transform: rotate(0deg);
+    }25%{
+        transform: rotate(-1deg);
+    }50%{
+        transform: rotate(0deg);
+    }75%{
+        transform: rotate(1deg);   
+    }100%{
+        transform: rotate(0deg);
+    }
+}
 @keyframes floating {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(8%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes floatingHover {
     0%{
         transform: translateY(0%);
     }

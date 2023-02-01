@@ -38,7 +38,7 @@ export const preguntasNumerosNaturalesGrado1 = [
         img: '../../img/math/portadas-temas/grado-1/01_numeros-naturales.png',
     },
     {
-        pregunta: '',
+        pregunta: 'Pregunta de ejemplo, cualquier opcion es correcta.',
         opciones: [
             '',
             '',
