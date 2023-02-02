@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="arriba">
   <!-- Header -->
   <header class="sticky-top">
     <!-- Barra navegacion -->
@@ -72,28 +72,36 @@
           alt="Imagen ejemplo: recta numerica 3">
         </picture>
         
-        <p>Facil, ¿cierto? Como te dijimos anteriormente, normalmente la primera linea es el numero 0, <strong>aunque tu puedes elegir desde que numero empezara tu recta</strong>. Pongamos un ultimo ejemplo, una recta que empieza desde el numero <strong class="text-math-suggestion">15 hasta el 25</strong>. Se veria de esta forma:</p>
+        <p>Como te dijimos anteriormente, normalmente la primera linea es el numero 0, <strong>aunque tu puedes elegir desde que numero empezara tu recta</strong>. Pongamos un ultimo ejemplo, una recta que empieza desde el numero <strong class="text-math-suggestion">15 hasta el 25</strong>. Se veria de esta forma:</p>
         <picture class="mb-3 text-center">
           <img class="img-fluid" src="../../img/math/grado-1/imagen-recta-numerica-ejemplo-4.png"
           alt="Imagen ejemplo: recta numerica 4">
         </picture>
-
-
-        <p>Facil, ¿cierto? Con esto te invitamos a hacer muchas <strong class="text-math-danger">rectas numericas </strong>en tu cuaderno para que practiques. Primero elige el numero hasta el cual deseas contar y despues elige como los contaras, si de <strong class="text-math-suggestion"> 1 en 1, de 2 en 2, de 5 en 5</strong> o como tu gustes.</p>
+        
+        
+        <p>Fue facil, ¿cierto? Ahora con esto, te invitamos a hacer muchas <strong class="text-math-danger">rectas numericas </strong>en tu cuaderno para que practiques. Primero elige el numero hasta el cual deseas contar y despues elige como los contaras, si de <strong class="text-math-suggestion"> 1 en 1, de 2 en 2, de 5 en 5</strong> o como tu gustes.</p>
         <p>Nosotros te pondremos estos ejercicios adicionales y unas pistas de como debes de hacerlo.</p>
         <ul>
-          <li>Del 0 hasta el 10 de 1 en 1.</li>
-          <li>Del 10 hasta el 20 de 2 en 2.</li>
-          <li>Del 15 hasta el 30 de 5 en 5.</li>
+          <li>Del 30 hasta el 40 de 1 en 1.</li>
+          <li>Del 50 hasta el 60 de 2 en 2.</li>
+          <li>Del 15 hasta el 50 de 5 en 5.</li>
+          <li>Del 50 hasta el 80 de 3 en 3.</li>
         </ul>
-
+        <p>Si no recuerdas algunos numeros puedes verificar tu 
+          <a class="link" href="../../doc/doc-numeros-1-a-99.pdf">lista de numeros</a>.
+        </p>
+        <picture class="mb-3 text-center">
+          <img class="img-fluid" src="../../img/math/grado-1/imagen-recta-numerica-pistas.png"
+          alt="Imagen ejemplo: recta numerica pistas ejercicios">
+        </picture>
+        
         <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu
           libro: <kbd>Grado 1.</kbd></p>
 
         <a href="./comparacion-de-numeros.html"
           class="btn btn-secondary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">leccion
           anterior</a>
-        <a href=""
+        <a href="./numeros-ordinales.html"
           class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">siguiente
           leccion</a>
       </article>
@@ -113,14 +121,15 @@
     </picture>
   </footer>
   <!-- Fin de pie de pagina -->
-
+<!-- Boton volver arriba -->
+<a href="#arriba" class="btnHaciaArriba floating bg-grado-1">
+  <img src="../../img/math/icons/flecha-hacia-arriba.svg" alt="">
+</a>
+<!-- Fin de Boton volver arriba -->
 
 </body>
-<!-- numeros-aleatorios -->
-<script type="module" src="../../js/numeros-aleatorios.js"></script>
-
-
-
+<!-- recta-numerica-js -->
+<script src="./js/recta-numerica.js"></script>
 
 <!-- Bootstrap 5.2.3 -->
 <script src="../../js/bootstrap.js"></script>

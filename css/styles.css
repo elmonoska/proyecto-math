@@ -199,6 +199,14 @@ body{
     -webkit-text-stroke-width: 2px;
 }
 
+/*Boton hacia arriba*/
+.btnHaciaArriba{
+    position: fixed;
+    right: 0;
+    bottom: 5px;
+    border-radius: 100%;
+}
+
 /* pruebaspara un boton de audio */
 #btnAudio{
     cursor: pointer;
