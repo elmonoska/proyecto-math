@@ -35,7 +35,7 @@ function crea5Ejercicios1a99() {
         listaSuma10Ejercicios.appendChild(li).innerHTML = `${numero1} <span class="align-middle text-math-danger fs-2">+</span> ${numero2}`;
         listaSuma10Ejercicios.appendChild(input);
 
-        //Reconoce y evalua las respuesta ingresadas por el usuario
+        //Reconoce y evalua las respuesta ingresadas por el usuario al momento que escribe
         input.addEventListener('keyup', e => {
             let valorInput = e.target
             if (parseInt(valorInput.value) === suma) {
