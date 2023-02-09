@@ -36,8 +36,8 @@ function crea5Ejercicios1a99() {
         listaSuma10Ejercicios.appendChild(input);
 
         //Reconoce y evalua las respuesta ingresadas por el usuario al momento que escribe
-        input.addEventListener('keyup', e => {
-            let valorInput = e.target
+        input.addEventListener('keyup', event => {
+            let valorInput = event.target
             if (parseInt(valorInput.value) === suma) {
                 valorInput.classList = 'border border-success bg-success bg-opacity-25 input-group-text p-3 shadow w-50 mx-auto mb-2'
             } else{
