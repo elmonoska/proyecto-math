@@ -1,0 +1,2 @@
+const hoy = new Date();
+
