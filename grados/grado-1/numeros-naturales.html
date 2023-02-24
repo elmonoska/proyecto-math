@@ -39,7 +39,7 @@
   <!-- Fin de migajas de pan -->
   </nav>
   <!-- Contenido principal -->
-  <main class="container my-2">
+  <main class="container my-2" id="contenido">
     <section class="container-fluid border rounded shadow text-start py-3">
         <!-- Banner de tema -->
         <section class="banner-tema shadow rounded mb-4 d-flex align-items-end justify-content-center" 
@@ -65,11 +65,11 @@
             <img class="img-fluid w-75" src="../../img/math/grado-1/g1-numeros-naturales-3.png" alt="Manzanas numero del 1 al 9">
           </picture>
 
-          <p><strong class="text-math-danger">Los numeros naturales</strong> los veremos en la mayor parte de nuestro dia a dia. Tan solo viendote a ti mismo puedes saber que tienes: <strong class="text-math-suggestion">2 ojos, 1 boca, 2 orejas</strong>, etc.</p>
+          <p><strong class="text-math-danger">Los numeros naturales</strong> los veremos en la mayor parte de nuestro dia a dia. Tan solo viendote a ti mismo puedes saber que tienes: <strong class="text-math-suggestion">2 ojos, 1 nariz, 2 orejas</strong>, etc.</p>
           <picture class="mb-3 text-center">
             <img class="img-fluid w-75" src="../../img/math/grado-1/g1-numeros-naturales-4.png" alt="Cabeza con numeros">
           </picture>
-          <p>Sabiendo esto, te invitamos a contar cualquier cosa que encuentres a tu alrededor: ventanas, puertas, juguetes, libros, etc.</p>
+          <p id="pruebas">Sabiendo esto, te invitamos a contar cualquier cosa que encuentres a tu alrededor: ventanas, puertas, juguetes, libros, etc.</p>
 
           <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu libro: <kbd>Grado 1.</kbd></p>
           
@@ -77,27 +77,29 @@
           <div class="border border-5 border-dark my-3 p-2">
             <p class="text-math-danger fs-3"><strong>↓ El siguiente recuadro es una prueba implementada, no tomar en cuenta como contenido final ↓</strong></p>
           <cite class="text-math-cites">Para escuchar la leccion da clic aqui</cite>
-          <img id="btnAudio" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">
-          <audio id="audioPlayer" src="../../audio/music/Dogs and Cats.mp3">Tu navegador no acepta los audios</audio>
-          <script>
-            const btnAudio = document.querySelector('#btnAudio')
-            const audioPlayer = document.querySelector('#audioPlayer')
-            btnAudio.addEventListener('click', () => {
-              audioPlayer.play()
-            })
-            </script>
-          </div>
+          <img id="btnAudioPlay" style="cursor: pointer" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">Play.
+          <img id="btnAudioPause" style="cursor: pointer" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">Pause.
+          <img id="btnAudioResume" style="cursor: pointer" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">Continuar.
+          <img id="btnAudioCancel" style="cursor: pointer" class="svg-size-xl mx-auto" src="../../img/math/icons/talking.svg" alt="">Parar.
+          <p id="msgLectura"></p>
+         
           
           <!-- Fin de pruebas con formulario de google -->
           
-          <a href="../../cuestionarios/cuestionarios-grado-1/numeros-naturales-cuestionario-1.html" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">realiza un cuestionario</a>
-          <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion</a>
-        
+          
         </article>
-          
-          
+        
+        
+      </section>
+
+      
+    </main>
+    <section class="container">
+    <article class="container-fluid d-flex justify-content-center flex-column my-5">
+      <a href="../../cuestionarios/cuestionarios-grado-1/numeros-naturales-cuestionario-1.html" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">realiza un cuestionario</a>
+      <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion</a>
+    </article>
     </section>
-  </main>
   <!-- Fin de contenido principal -->
   <!-- Pie de pagina -->
   <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
@@ -118,6 +120,8 @@
   </a>
   <!-- Fin de Boton volver arriba -->
 </body>
+<!-- numeros-naturales.js -->
+<script src="./js/numeros-naturales.js"></script>
 <!-- Bootstrap 5.2.3 -->
 <script src="../../js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->
