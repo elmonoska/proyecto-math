@@ -7,6 +7,7 @@ speechSynthesis.addEventListener('voiceschanged', () =>{
     const numerroVozAleatoria = Math.floor(Math.random()*voces.length)
     
     let lectura = new SpeechSynthesisUtterance(texto)
+
     let sintetizador = speechSynthesis
     lectura.voice = voces[numerroVozAleatoria]
     lectura.lang = voces[numerroVozAleatoria].lang

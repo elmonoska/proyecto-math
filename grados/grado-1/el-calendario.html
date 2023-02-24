@@ -80,15 +80,38 @@
         </picture>
         
         <h2 class="text-math-secondary text-capitalize"><strong>Ayer, hoy y mañana.</strong></h2>
-        <p>Cuando hablamos de los dias puedes referirte tambien</p>
+        <p>Cuando hablamos de los dias puedes referirte tambien <strong>al dia de mañana o el dia de ayer</strong>, que es igual a decir el dia anterior o el dia siguiente. </p>
+        <p><strong class="text-math-suggestion">El dia de hoy</strong> hace referencia al dia actual o en el que estamos en este momento. Por ejemplo, <strong class="text-math-suggestion">hoy </strong> es <strong id="hoy" class="text-uppercase text-math-danger"></strong> y <strong class="text-math-suggestion">hoy </strong> estas leyendo esto.</p>
+        <p><strong class="text-math-suggestion">El dia de mañana</strong> hace referencia <strong>al dia siguiente de la semana</strong>. Por ejemplo, <strong class="text-math-suggestion">mañana </strong> es <strong class="text-math-danger text-uppercase" id="mañana"></strong> y <strong class="text-math-suggestion">mañana </strong> iras a la escuela, jugaras con tus amigos o iras al parque.</p>
+        <p><strong class="text-math-suggestion">El dia de ayer</strong> hace referecia <strong>al dia anterior de la semana</strong>. Por ejemplo, <strong class="text-math-suggestion">ayer </strong> fue <strong class="text-math-danger text-uppercase" id="ayer"></strong> y <strong class="text-math-suggestion">ayer</strong> antes de irte a dormir te lavaste los dientes.</p>
+        <picture class="mb-3 text-center">
+            <img class="img-fluid" src="../../img/math/grado-1/g1-el-calendario-5.png"
+            alt="Ejemplo ayer, hoy y mañana">
+        </picture>
         
+        <p>Saber esto hara que comprendas mejor el calendario. Ahora te proponemos los siguientes ejercicios sencillos, solo elige sobre la respuesta correcta, automaticamente se pintara de color si estas <strong class="text-math-secondary">bien</strong> o <strong class="text-math-danger">mal</strong>.</strong>.</p>
+        
+        <p>¿Que dia es hoy?</p>
+        <select id="queDiaEsHoy" class="form-select mb-3 text-center">
+          <option value="Default" disabled selected>Elige un dia</option>
+          <!-- Generado con js -->
+        </select>
+        
+        <p>¿En que mes te encuentras?</p>
+        <select id="queMesEs" class="form-select mb-3 text-center">
+          <option value="Default" disabled selected>Elige un mes</option>
+          <!-- Generado con js -->
+        </select>
+
+        <p>Facil ¿cierto?. Saber <strong class="text-math-suggestion">los dias, las semanas y los meses</strong> sera muy importante en tu vida. Por ejemplo para saber el dia de tu cumpleaños, cuando sales de vacaciones, cuanto entraras a la escuela, etc. </p>
+
         <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu
           libro: <kbd>Grado 1.</kbd></p>
 
         <a href="./figuras-geometricas.html"
           class="btn btn-secondary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">leccion
           anterior</a>
-        <a href=""
+        <a href="./el-reloj.html"
           class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center">siguiente
           leccion</a>
       </article>
@@ -116,7 +139,7 @@
 
 </body>
 <!-- el calendario-js -->
-<script src="./js/el-calendario.js"></script>
+<script type="module" src="./js/el-calendario.js"></script>
 
 <!-- Bootstrap 5.2.3 -->
 <script src="../../js/bootstrap.js"></script>
