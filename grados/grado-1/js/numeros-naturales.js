@@ -1,3 +1,12 @@
+import { animacionesDOM } from "../../../js/animacionesDOM.js"
+
+document.addEventListener('DOMContentLoaded', () => {
+    animacionesDOM()
+    
+})
+
+/* 
+PRUEBA CON FUNCINE DE TEXTO A VOZ, VERIFICAR SI SE IMPLEMENTA DESPUES
 document.addEventListener('DOMContentLoaded', () => {
     if('speechSynthesis' in window){
 //Carga las voces disponibles en español cuando carga el documento
@@ -36,5 +45,4 @@ speechSynthesis.addEventListener('voiceschanged', () =>{
     }
     
         
-})
-
+}) */

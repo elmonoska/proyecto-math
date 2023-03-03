@@ -44,10 +44,10 @@
         <!-- Banner de tema -->
         <section class="banner-tema shadow rounded mb-4 d-flex align-items-end justify-content-center" 
         style="background-image: url(../../img/math/portadas-temas/grado-1/01_numeros-naturales.png);">
-        <p class="glass display-3 text-uppercase text-center bubble-gum text-dark text-shadow-white rounded p-2 w-100 mx-5">números naturales</p>
+        <p id="tituloTema" class="glass display-3 text-uppercase text-center bubble-gum text-dark text-shadow-white rounded p-2 w-100 mx-5">números naturales</p>
       </section>
         <!-- Fin de banner de tema -->
-        <article class="container d-flex flex-column">
+        <article id="explicacionTema" class="container d-flex flex-column">
           <p>En esta primera leccion aprenderas sobre <strong class="text-math-danger">los numeros naturales</strong>.</p>
           <p><strong class="text-math-danger">Los números naturales </strong> son aquellos simbolos que nos permiten contar la cantidad de cosas que existen o los elementos de un conjunto. Ya sean días, personas, animales o cualquier cosa que se te ocurra.</p>
           <picture class="mb-3 text-center">
@@ -73,22 +73,11 @@
 
           <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu libro: <kbd>Grado 1.</kbd></p>
           
-          
-          
-          
+          <a href="../../cuestionarios/cuestionarios-grado-1/numeros-naturales-cuestionario-1.html" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">realiza un cuestionario</a>
+          <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion</a>    
         </article>
-        
-        
       </section>
-
-      
     </main>
-    <section class="container">
-    <article class="container-fluid d-flex justify-content-center flex-column my-5">
-      <a href="../../cuestionarios/cuestionarios-grado-1/numeros-naturales-cuestionario-1.html" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">realiza un cuestionario</a>
-      <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion</a>
-    </article>
-    </section>
   <!-- Fin de contenido principal -->
   <!-- Pie de pagina -->
   <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
@@ -110,7 +99,7 @@
   <!-- Fin de Boton volver arriba -->
 </body>
 <!-- numeros-naturales.js -->
-<script src="./js/numeros-naturales.js"></script>
+<script type="module" src="./js/numeros-naturales.js"></script>
 <!-- Bootstrap 5.2.3 -->
 <script src="../../js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->
