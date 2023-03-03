@@ -13,12 +13,15 @@
     <meta name="theme-color" content="#7648E0">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
+    <link rel="shortcut icon" type="image/png" href="./img/512x512 portada-del-curso.png">
+    <!-- Soporte para iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="./img/512x512 portada-del-curso.png">
-    <link rel="apple-touch-icon" href="./img/512x512 portada-del-curso.png">
+    <link rel="apple-touch-icon" href="./img/512x512 portada-del-curso.png" sizes="512x512">
     <link rel="apple-touch-startup-image" href="./img/512x512 portada-del-curso.png">
+    <!-- Manifest de pwa -->
     <link rel="manifest" href="./manifest.json">
+    <!-- Fin Metas para pwa -->
 
   </head>
   <body>
@@ -29,10 +32,11 @@
           <picture class="col">
             <img class="img-fluid rounded shadow mb-3" src="./img/portada-del-curso-large.png" alt="Logo principal matematicas">
           </picture>
-          <h1 class="col text-uppercase bubble-gum text-math-primary text-shadow-black display-1">{{Curso de matematicas}}</h1>
+          <h1 class="col text-uppercase bubble-gum text-stroke-black text-success display-1">{{Curso de matematicas}}</h1>
           <h2 class="col">Bienvenido!</h2>
           <a href="" class="link fs-3" target="_blank">Lee esta guia antes de comenzar</a>
           <a href="./menu-principal.html" class="col text-shadow-black bubble-gum fs-1 btn btn-info text-white border border-2 border-opacity-75 border-dark w-75 mx-auto rounded-4 p-3">¡Comenzar!</a>
+          
         </article>
       </section>
     </main>
