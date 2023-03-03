@@ -1,20 +1,19 @@
 {
     "name": "Curso de matematicas",
-    "short_name": "Curso Math",
+    "short_name": "Curso de math",
     "description": "Curso de matematicas para niños",
-    "backgroud_color": "#1C1C1E",
-    "theme_color": "#7648E0",
+    "background_color": "#7648E0",
+    "theme_color": "#1C1C1E",
     "orientation": "portrait",
-    "display": "standalone", 
-    "id": "./?utm_source=web_app_manifest",
+    "display": "standalone",
     "start_url": "./?utm_source=web_app_manifest",
     "scope": "./",
-    "lang": "ex-MX",
+    "lang": "es-MX",
     "icons": [
-        {
-            "src": "./img/512x512 portada-del-curso.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        }
+      {
+        "src": "./img/512x512 portada-del-curso.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ]
-}
+  }
