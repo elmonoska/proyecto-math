@@ -1,6 +1,6 @@
 //Valida si el navegador puede trabajar con service worker
 if('serviceWorker' in navigator){
-        navigator.serviceWorker.getRegistrations()
+    navigator.serviceWorker.getRegistrations()
     .then((registrations) => 
     { 
         for(let registration of registrations) 
@@ -8,7 +8,7 @@ if('serviceWorker' in navigator){
             registration.unregister() 
         } 
     })
-    const pathServiceWorker = './serviceWorker.js'
+    const pathServiceWorker = './ServiceWorker.js'
     navigator.serviceWorker.register(pathServiceWorker)
     .then(registro => console.log('Registro de SW correcto', registro))
     .catch(error => {

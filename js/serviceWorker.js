@@ -6,7 +6,6 @@ const nombreCache = 'v1CacheCursoMatematicas',
         './index.html',
         './manifest.json',
         './menu-principal.html',
-        './serviceWorker.js',
         
         
         //Carpeta Audio
@@ -95,6 +94,7 @@ const nombreCache = 'v1CacheCursoMatematicas',
         './js/numero-a-ordinal.js',
         './js/numeros-a-letras.js',
         './js/numeros-aleatorios.js',
+        './ServiceWorker.js'
     ]
 
 //Instala el SW
