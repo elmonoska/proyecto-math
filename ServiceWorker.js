@@ -3,9 +3,11 @@ const nombreCache = 'v1CacheCursoMatematicas',
     urlsToCache = [ 
         //Raiz
         './',
+        './app.js',
         './index.html',
         './manifest.json',
         './menu-principal.html',
+        './ServiceWorker.js',
         
         
         //Carpeta Audio
@@ -89,12 +91,10 @@ const nombreCache = 'v1CacheCursoMatematicas',
         
 
         //Carpeta js
-        './js/app.js',
         './js/bootstrap.js',
         './js/numero-a-ordinal.js',
         './js/numeros-a-letras.js',
         './js/numeros-aleatorios.js',
-        './ServiceWorker.js'
     ]
 
 //Instala el SW
