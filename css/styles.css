@@ -203,8 +203,27 @@ body{
 .btnHaciaArriba{
     position: fixed;
     right: 0;
+    bottom: 10%;
+    border-radius: 100%;
+}
+
+/*Boton hacia abajo*/
+.btnHaciaAbajo{
+    position: fixed;
+    right: 0;
     bottom: 5px;
     border-radius: 100%;
+}
+
+/*Boton de ayuda*/
+.btnAyuda{
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    border-radius: 100%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 /* pruebaspara un boton de audio */
@@ -229,7 +248,20 @@ body{
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
-
+@keyframes pulse {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05,1.05,1.05);
+        transform: scale3d(1.05,1.05,1.05);
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
 @keyframes zoomInOut {
     0%{
         transform: scale(1.02);
@@ -316,31 +348,25 @@ body{
 @keyframes bigEntrance {
     0% {
         transform: scale(0.3) rotate(6deg) translateX(-30%) translateY(30%);
-        opacity: 0.2;
+        opacity: 0;
     }
     30% {
         transform: scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%);
-        opacity: 1;
     }
     45% {
         transform: scale(0.98) rotate(1deg) translateX(0%) translateY(0%);
-        opacity: 1;
     }
     60% {
         transform: scale(1.01) rotate(-1deg) translateX(0%) translateY(0%);
-        opacity: 1;
     }
     75% {
         transform: scale(0.99) rotate(1deg) translateX(0%) translateY(0%);
-        opacity: 1;
     }
     90% {
         transform: scale(1.01) rotate(0deg) translateX(0%) translateY(0%);
-        opacity: 1;
     }
     100% {
         transform: scale(1) rotate(0deg) translateX(0%) translateY(0%);
-        opacity: 1;
     }
 }
 
@@ -399,6 +425,28 @@ body{
     }
 }
 
+@keyframes lightSpeedInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%,0,0) skewX(30deg);
+        transform: translate3d(-100%,0,0) skewX(30deg);
+    }
+    
+    60% {
+        opacity: 1;
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+    }
+    80% {
+        -webkit-transform: skewX(5deg);
+        transform: skewX(5deg);
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
 @keyframes flipInY {
     0% {
         -webkit-animation-timing-function: ease-in;
@@ -432,8 +480,9 @@ body{
     }
 }
 
-@keyframes bigEntrance {
+@keyframes bounceInLeft {
     0% {
+        opacity: 0;
         transform: translateX(-100%) scaleY(0.8);
     }
     30% {
@@ -446,6 +495,7 @@ body{
         transform: translateX(0%) scaleY(1.1);
     }
     60% {
+        opacity: 1;
         transform: translateX(0%) scaleY(0.9);
     }
     70% {

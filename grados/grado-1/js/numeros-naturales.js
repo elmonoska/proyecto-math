@@ -1,8 +1,10 @@
-import { animacionesDOM } from "../../../js/animacionesDOM.js"
+import { animacionBotones, animacionImagenes, animacionParrafos, animacionTitulo } from "../../../js/animacionesDOM.js"
 
 document.addEventListener('DOMContentLoaded', () => {
-    animacionesDOM()
-    
+    animacionTitulo()
+    animacionParrafos()
+    animacionImagenes()
+    animacionBotones()
 })
 
 /* 

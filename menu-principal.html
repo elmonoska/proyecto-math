@@ -10,6 +10,7 @@
   <!-- Personal styles -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <!-- Header -->
   <header class="sticky-top">
@@ -28,49 +29,57 @@
   <!-- Contenido principal -->
   <main class="container my-3">
     <section class="container-fluid border rounded shadow text-center py-3">
-      <p class="display-3 text-math-primary">Indice general</p>
-      <a href="" class="py-5">
-        <img class="svg-size-xxx" src="./img/math/icons/index.svg" alt="Imagen de indice general">
-      </a>
-      <p class="display-3 text-math-primary">Grados</p>
-
-      <article class="row row-cols-lg-4 gap-2 mx-auto justify-content-around">
-        <a href="./grados/grado-1/menu-grado-1.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-1 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-1.svg" alt="Imagen grado 1">
-        </a>
-        <a href="./grados/grado-2/menu-grado-2.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-2 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-2.svg" alt="Imagen grado 2">
-        </a>
-        <a href="./grados/grado-3/menu-grado-3.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-3 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-3.svg" alt="Imagen grado 3">
-        </a>
-        <a href="./grados/grado-4/menu-grado-4.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-4 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-4.svg" alt="Imagen grado 4">
-        </a>
-        <a href="./grados/grado-5/menu-grado-5.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-5 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-5.svg" alt="Imagen grado 5">
-        </a>
-        <a href="./grados/grado-6/menu-grado-6.html"
-          class="col border border-dark border-opacity-75 border-3 bg-grado-6 shadow rounded-5 icon-grado">
-          <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-6.svg" alt="Imagen grado 6">
+      <article class="m-3">
+        <p class="display-1 text-math-secondary bubble-gum text-stroke-black">Indice general.</p>
+        <a href="" class="py-5">
+          <img class="svg-size-xxx" src="./img/math/icons/index.svg" alt="Imagen de indice general">
         </a>
       </article>
+
+
+      <article class="m-3">
+        <p class="display-1 text-math-secondary bubble-gum text-stroke-black">Grados.</p>
+        
+        <article class="d-flex flex-column flex-md-row flex-wrap justify-content-around gap-3 m-3">
+          <a href="./grados/grado-1/menu-grado-1.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-1 shadow rounded-5">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-1.svg" alt="Imagen grado 1">
+          </a>
+          <a href="./grados/grado-2/menu-grado-2.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-2 shadow rounded-5">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-2.svg" alt="Imagen grado 2">
+          </a>
+          <a href="./grados/grado-3/menu-grado-3.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-3 shadow rounded-5">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-3.svg" alt="Imagen grado 3">
+          </a>
+        </article>
+        
+        <article class="d-flex flex-column flex-md-row flex-wrap justify-content-around gap-3 m-3">
+          <a href="./grados/grado-4/menu-grado-4.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-4 shadow rounded-5 icon-grado">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-4.svg" alt="Imagen grado 4">
+          </a>
+          <a href="./grados/grado-5/menu-grado-5.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-5 shadow rounded-5 icon-grado">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-5.svg" alt="Imagen grado 5">
+          </a>
+          <a href="./grados/grado-6/menu-grado-6.html"
+            class="col border border-dark border-opacity-75 border-3 bg-grado-6 shadow rounded-5 icon-grado">
+            <img class="svg-size-xxx" src="./img/math/icons-grados/icono-grado-6.svg" alt="Imagen grado 6">
+          </a>
+
+        </article>
+
+      </article>
+
+
+
     </section>
   </main>
   <!-- Fin de contenido principal -->
   <!-- Pie de pagina -->
   <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
-    <p class="my-auto text-white">
-      <img class="svg-size-m" src="./img/math/icons/question-white.svg" alt="Icono question white">
-      <a class="link link-light" href="">
-        <em>Dudas o sugerencias</em>
-      </a>
-    </p>
     <picture class="text-center">
       <img class="img-fluid shadow w-50" src="./img/pinsa/logo-pinsa-transparent.png" alt="Logo pinsa transparente">
     </picture>
@@ -80,6 +89,7 @@
 <!-- Bootstrap 5.2.3 -->
 <script src="./js/bootstrap.js"></script>
 <!-- Popper js bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
 </html>

@@ -74,29 +74,61 @@
           <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu libro: <kbd>Grado 1.</kbd></p>
           
           <a href="../../cuestionarios/cuestionarios-grado-1/numeros-naturales-cuestionario-1.html" class="btn btn-danger bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">realiza un cuestionario</a>
-          <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion</a>    
+          <a href="./unidad-y-decena.html" class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente leccion 
+            <img src="../../img/math/icons/flecha-hacia-derecha.svg" alt="">
+          </a>    
         </article>
       </section>
+
+      <!-- Modal -->
+      <article class="modal" tabindex="-1" id="modalAyuda">
+        <article class="modal-dialog modal-dialog-centered">
+          <article class="modal-content">
+            <article class="modal-header text-center">
+              <h5 class="bubble-gum display-1 text-info text-stroke-black w-100">Dudas.</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </article>
+            <div class="modal-body">
+              <p>Si tienes alguna duda o sugerencia puedes contactarnos por cualquiera de los siguientes medios.</p>
+              <ul>
+                <li><span class="text-primary">Via telefonica</span>: 55-50-22-11-11</li>
+                <li><span class="text-success">Chat de Whatsapp</span>: 55-80-21-68-78</li>
+                <li><span class="text-danger">Correo electronico</span>: soportetecnico@publicacionesint.com.mx</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </article>
+        </article>
+      </article>
+      <!-- Fin modal -->
     </main>
   <!-- Fin de contenido principal -->
   <!-- Pie de pagina -->
-  <footer class="footer bg-pinsa-primary d-flex justify-content-around p-2">
-    <p class="my-auto text-white">
-      <img class="svg-size-m" src="../../img/math/icons/question-white.svg" alt="Icono question white">
-      <a class="link link-light" href="">
-        <em>Dudas o sugerencias</em>
-      </a>
-    </p>
+  <footer id="abajo" class="footer bg-pinsa-primary d-flex justify-content-around p-2">
     <picture class="text-center">
       <img class="img-fluid shadow w-50" src="../../img/pinsa/logo-pinsa-transparent.png" alt="Logo pinsa transparente">
     </picture>
   </footer>
   <!-- Fin de pie de pagina -->
   <!-- Boton volver arriba -->
-  <a href="#arriba" class="btnHaciaArriba floating bg-grado-1">
+  <a href="#arriba" class="btnHaciaArriba bg-grado-1">
     <img src="../../img/math/icons/flecha-hacia-arriba.svg" alt="">
   </a>
   <!-- Fin de Boton volver arriba -->
+  <!-- Boton volver abajo-->
+  <a href="#abajo" class="btnHaciaAbajo bg-grado-1">
+    <img src="../../img/math/icons/flecha-hacia-abajo.svg" alt="">
+  </a>
+  <!-- Fin de Boton volver arriba -->
+  <!-- Boton de ayuda-->
+  <a class="btnAyuda bg-grado-1" data-bs-toggle="modal" data-bs-target="#modalAyuda">
+    <img src="../../img/math/icons/boton-ayuda.png" alt="">
+  </a>
+  <!-- Fin de Boton de ayuda -->
+
+
 </body>
 <!-- numeros-naturales.js -->
 <script type="module" src="./js/numeros-naturales.js"></script>
