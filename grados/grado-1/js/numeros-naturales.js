@@ -1,11 +1,18 @@
-import { animacionBotones, animacionImagenes, animacionParrafos, animacionTitulo } from "../../../js/animacionesDOM.js"
+import {
+  animacionBotones,
+  animacionImagenes,
+  animacionParrafos,
+  animacionTitulo,
+  recargarPagina,
+} from "../../../js/animacionesDOM.js";
 
-document.addEventListener('DOMContentLoaded', () => {
-    animacionTitulo()
-    animacionParrafos()
-    animacionImagenes()
-    animacionBotones()
-})
+document.addEventListener("DOMContentLoaded", () => {
+  animacionTitulo();
+  animacionParrafos();
+  animacionImagenes();
+  animacionBotones();
+  recargarPagina();
+});
 
 /* 
 PRUEBA CON FUNCINE DE TEXTO A VOZ, VERIFICAR SI SE IMPLEMENTA DESPUES

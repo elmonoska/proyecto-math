@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   animacionSubtema();
   animacionParrafos();
   animacionImagenes();
-  animacionListasUl();
   animacionTablas();
+  animacionListasUl();
   animacionBotones();
   recargarPagina();
 });
