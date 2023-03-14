@@ -4,7 +4,6 @@ import {
   animacionListasUl,
   animacionParrafos,
   animacionSubtema,
-  animacionTablas,
   animacionTitulo,
   recargarPagina,
 } from "../../../js/animacionesDOM.js";

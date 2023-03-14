@@ -1,13 +1,12 @@
 let tamanoPantalla = window.innerHeight / 1;
 let tamanoPantallaImg = window.innerHeight / 1.2;
 
-
 //Boton de recargar pagina
-export function recargarPagina(){
-  const btnReload = document.querySelector('#btnReload')
-  btnReload.addEventListener('click', () => {
-    window.location.reload()
-  })
+export function recargarPagina() {
+  const btnReload = document.querySelector("#btnReload");
+  btnReload.addEventListener("click", () => {
+    window.location.reload();
+  });
 }
 
 //Agrega animacion para el titulo del tema
@@ -18,14 +17,14 @@ export function animacionTitulo() {
 
 //Agrega animacion para el subtema del titulo
 export function animacionSubtema() {
-  const subtemas = document.querySelectorAll('#explicacionTema h2')
-  subtemas.forEach(subtema => {
-    self.addEventListener('scroll', () => {
+  const subtemas = document.querySelectorAll("#explicacionTema h2");
+  subtemas.forEach((subtema) => {
+    self.addEventListener("scroll", () => {
       const ubicacion = subtema.getBoundingClientRect();
-      if(ubicacion.top < tamanoPantalla){
-        subtema.style.animation = 'lightSpeedInLeft linear 1.5s'
+      if (ubicacion.top < tamanoPantalla) {
+        subtema.style.animation = "lightSpeedInLeft linear 1.5s";
       }
-    })
+    });
   });
 }
 
@@ -74,40 +73,40 @@ export function animacionBotones() {
 }
 
 //Agrega animaciones a las tablas
-export function animacionTablas(){
-  const tablasTema = document.querySelectorAll('#explicacionTema table')
-  tablasTema.forEach(tabla => {
+export function animacionTablas() {
+  const tablasTema = document.querySelectorAll("#explicacionTema table");
+  tablasTema.forEach((tabla) => {
     self.addEventListener("scroll", () => {
       const ubicacion = tabla.getBoundingClientRect();
       if (ubicacion.top < tamanoPantalla) {
         tabla.style.animation = "bigEntrance linear 2s";
       }
     });
-  })
+  });
 }
 
 //Agrega animaciones a las listas desordenadas
-export function animacionListasUl(){
-  const listasUl = document.querySelectorAll('#explicacionTema ul')
-  listasUl.forEach(lista => {
+export function animacionListasUl() {
+  const listasUl = document.querySelectorAll("#explicacionTema ul");
+  listasUl.forEach((lista) => {
     self.addEventListener("scroll", () => {
       const ubicacion = lista.getBoundingClientRect();
       if (ubicacion.top < tamanoPantalla) {
         lista.style.animation = "bigEntrance linear 2s";
       }
     });
-  })
+  });
 }
 
 //Agrega animaciones a las listas ordenadas
-export function animacionListasOl(){
-  const listasUl = document.querySelectorAll('#explicacionTema ol')
-  listasUl.forEach(lista => {
+export function animacionListasOl() {
+  const listasUl = document.querySelectorAll("#explicacionTema ol");
+  listasUl.forEach((lista) => {
     self.addEventListener("scroll", () => {
       const ubicacion = lista.getBoundingClientRect();
       if (ubicacion.top < tamanoPantalla) {
         lista.style.animation = "bigEntrance linear 2s";
       }
     });
-  })
+  });
 }

@@ -16,4 +16,3 @@ if('serviceWorker' in navigator){
         console.error('Error al tratar de registrar el SW', error);
     })
 }
-
