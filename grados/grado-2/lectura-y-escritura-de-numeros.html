@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lectura y Escritura De Numeros | Menu de Grado 2 | {{curso de matematicas}}</title>
+  <!-- Css bootstrap 5.2.3 -->
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <!-- Personal styles -->
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body id="arriba">
+
+  <!-- Header -->
+  <header class="sticky-top">
+
+    <!-- Barra navegacion -->
+    <nav class="bg-math-primary text-math-white p-3 d-flex justify-content-between">
+      <picture>
+        <a href="./menu-grado-2.html">
+          <img loading="lazy" class="img-fluid" src="../../img/math/icons/back-color.svg" alt="Flecha hacia atras">
+        </a>
+      </picture>
+      <p class="display-6 text-nowrap my-auto bubble-gum text-uppercase text-shadow-black floating">{{Curso de matematicas}}</p>
+    </nav>
+    <!-- Fin de barra de navegacion -->
+
+  </header>
+  <!-- Fin de header -->
+
+  <!-- Migajas de pan -->
+  <nav class="container my-2"
+    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+    aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../menu-principal.html">Menu Principal</a></li>
+      <li class="breadcrumb-item"><a href="./menu-grado-2.html">Menu Grado 2</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Lectura y Escritura De Numeros</li>
+    </ol>
+  </nav>
+  <!-- Fin de migajas de pan -->
+
+  <!-- Contenido principal -->
+  <main class="container my-2 overflow-hidden">
+    <section class="container-fluid border rounded shadow text-start py-3">
+      
+      <!-- Banner de tema -->
+      <section class="banner-tema shadow rounded mb-4 d-flex align-items-end justify-content-center"
+        style="background-image: url(../../img/math/portadas-temas/grado-1/portada-tema.png);">
+        <p id="tituloTema"
+          class="glass display-3 text-uppercase text-center bubble-gum text-dark text-shadow-white rounded p-2 w-100 mx-5">
+          lectura y escritura de numeros</p>
+      </section>
+      <!-- Fin de banner de tema -->
+
+      <article id="explicacionTema" class="container d-flex flex-column">
+        <p>En esta leccion aprenderas sobre <strong class="text-math-danger">la lectura y escritura</strong> de numeros, utilizando las <strong>centenas y unidades de millar.</strong></p>
+
+        <p class="alert alert-warning">Te recomendamos trabajar con el tema anterior de <a href="../grado-1/unidad-y-decena.html"> lectura y escritura de numeros</a> (unidad y decena) para refrescar tu conocimiento o si tienes problemas aun.</p>
+
+        <p>Como viste anteriormente, cualquier número que se te ocurra puede escribirse y leerse.</p>
+        <p>¿Recuerdas los numeros naturales? Pues los seguiremos utilizando a lo largo de este curso en muchos temas.</p>
+          
+
+        <h2 class="text-math-secondary text-capitalize"><strong>como escribir las centenas.</strong></h2>
+        <p>Las <strong>centenas </strong> se escriben de la siguiente forma.</p>
+
+        <table id="tabla100a900"
+          class="table table-light table-striped table-hover table-bordered table-sm text-center shadow w-75 mx-auto mt-2 mb-4">
+          <thead class="table-dark">
+            <tr>
+              <th>Simbolo</th>
+              <th>Numero Escrito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Contenido se genera con js -->
+          </tbody>
+        </table>
+
+        <h2 class="text-math-secondary text-capitalize"><strong>como se escriben las unidades de millar.</strong></h2>
+        <p>Ahora veamos como se escriben <strong>unidades de millar</strong>.</p>
+        <table id="tabla1000a9000"
+          class="table table-light table-striped table-hover table-bordered table-sm text-center shadow w-75 mx-auto mt-2 mb-4">
+          <thead class="table-dark">
+            <tr>
+              <th>Simbolo</th>
+              <th>Numero Escrito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Contenido se genera con js -->
+          </tbody>
+        </table>
+        <p class="mt-1 mb-3">Facil, ¿cierto? Si te das cuenta es muy similar a escribir las unidades y decenas, solo cambiara muy poco.</p>
+
+        <h2 class="text-math-secondary text-capitalize"><strong>reglas para la escritura de numeros.</strong></h2>
+        <p>Al escribir los numeros aun tendremos que seguir ciertas reglas, en el caso de <strong>las centenas y unidades de millar </strong> seran las siguientes:</p>
+        <ol>
+          <li>Las centenas <strong>siempre se escriben con una sola palabra</strong>. Todas las centenas tendran la palabra <strong class="text-math-suggestion">cientos </strong> cuando las escribamos, pero <strong>la unica centena que no la tendra sera el 100</strong>.</li>
+          <li>Todas las unidades de millar tendran la palabra <strong class="text-math-suggestion">mil</strong> cuando las escribamos y siempre seran 2 palabras. <strong>La unica unidad de millar que se escribe con una sola palabra es el 1000</strong>. </li>
+        </ol>
+        <p>Puede que te preguntes como se escribira un numero cuando tengas juntas las unidades, decenas, centenas, etc. <strong>Solamente tendras que juntar los numeros escritos</strong>, asi de simple. Por ejemplo: </p>
+        <p>El numero <strong class="text-math-danger" id="numeroEntre1a9999"></strong> se escribe asi: <strong class="text-math-suggestion" id="numeroEscritoEntre1a9999"></strong></p>
+        <p>Si notas,<strong> estamos escribiendo siempre de izquierda a derecha</strong>. Y empezamos escribiendo las unidades de millar, despues las centenas, despues las decenas y por ultimo las unidades.</p>
+
+          <p>Si deseas saber como se escribe un numero, puedes escribirlo aqui y despues presionar el boton:</p>
+          <form class="d-flex flex-column w-75 mx-auto gap-1">
+            <input class="input-group-text p-3 shadow" type="text" id="numeroIntroducido"
+              placeholder="Escribe aqui tu numero">
+            <strong>
+              <p id="numeroEnTexto" class="text-math-danger fs-4 text-capitalize text-center my-2"></p>
+            </strong>
+            <button class="btn btn-dark bubble-gum p-3 fs-4 text-capitalize" id="consultaNumero">¡Presiona
+              aqui!</button>
+          </form>
+        
+
+        <h2 class="text-math-secondary text-capitalize mt-4"><strong>reglas para leer los numeros.</strong></h2>
+        <p>Lo unico que debes saber para leer un numero, es que <strong>siempre lo haras desde la izquierda hacia la
+            derecha</strong>. Como en el siguiente ejemplo:</p>
+        <picture class="mb-3 text-center">
+          <img loading="lazy" class="img-fluid w-75" src="../../img/math/grado-2/g2-lectura-y-escritura 1.png" alt="Numero escrito 1397">
+        </picture>
+
+        <p>Sabiendo esto te invitamos a escribir varios numeros en tu cuaderno. Tantos como se te ocurran y si tienes dudas de como se escribe alguno puedes validarlo mas arriba.</p>
+
+        <p class="alert alert-info">Para realizar un ejercicio puedes consultar la pagina <kbd>{{num-pag}}</kbd> de tu
+          libro: <kbd>Grado 2.</kbd></p>
+
+        <a href="./centenas-y-unidades-de-millar.html"
+          class="btn btn-secondary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">leccion
+          anterior</a>
+        <a href="./antecesor-y-sucesor.html"
+          class="btn btn-primary bubble-gum text-white text-uppercase text-shadow-black fs-3 p-3 mb-2 w-75 align-self-center zoomInOutHover">siguiente
+          leccion</a>
+
+      </article>
+    </section>
+  </main>
+  <!-- Fin de contenido principal -->
+
+  <!-- Pie de pagina -->
+  <footer id="abajo" class="footer bg-pinsa-primary d-flex justify-content-around p-2">
+    <picture class="text-center">
+      <img loading="lazy" class="img-fluid shadow w-50" src="../../img/pinsa/logo-pinsa-transparent.png" alt="Logo pinsa transparente">
+    </picture>
+  </footer>
+  <!-- Fin de pie de pagina -->
+
+  <!-- Modal -->
+  <article class="modal" tabindex="-1" id="modalAyuda">
+    <article class="modal-dialog modal-dialog-centered">
+      <article class="modal-content">
+        <article class="modal-header text-center">
+          <h5 class="bubble-gum display-1 text-info text-stroke-black w-100">Dudas.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </article>
+        <div class="modal-body">
+          <p>Si tienes alguna duda o sugerencia puedes contactarnos por cualquiera de los siguientes medios.</p>
+          <ul>
+            <li><span class="text-primary">Via telefonica</span>: 55-50-22-11-11</li>
+            <li><span class="text-success">Chat de Whatsapp</span>: 55-80-21-68-78</li>
+            <li><span class="text-danger">Correo electronico</span>: soportetecnico@publicacionesint.com.mx</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </article>
+    </article>
+  </article>
+  <!-- Fin modal -->
+
+  <!-- Boton volver arriba -->
+  <a href="#arriba" class="btnHaciaArriba bg-grado-2">
+    <img loading="lazy" src="../../img/math/icons/flecha-hacia-arriba.svg" alt="">
+  </a>
+  <!-- Fin de Boton volver arriba -->
+  <!-- Boton volver abajo-->
+  <a href="#abajo" class="btnHaciaAbajo bg-grado-2">
+    <img loading="lazy" src="../../img/math/icons/flecha-hacia-abajo.svg" alt="">
+  </a>
+  <!-- Fin de Boton volver arriba -->
+  <!-- Boton de ayuda-->
+  <a class="btnAyuda bg-grado-2" data-bs-toggle="modal" data-bs-target="#modalAyuda">
+    <img loading="lazy" src="../../img/math/icons/boton-ayuda.png" alt="">
+  </a>
+  <!-- Fin de Boton de ayuda -->
+  <!-- Boton reload-->
+  <a class="btnReload bg-grado-2" id="btnReload">
+    <img loading="lazy" src="../../img/math/icons/boton-reload.svg" alt="">
+  </a>
+  <!-- Fin de Boton reload -->
+
+</body>
+
+<!-- lectura-y-escritura-de-numeros.js -->
+<script type="module" src="./js/lectura-y-escritura-de-numeros.js"></script>
+<!-- Bootstrap 5.2.3 -->
+<script src="../../js/bootstrap.js"></script>
+<!-- Popper js bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+</html>

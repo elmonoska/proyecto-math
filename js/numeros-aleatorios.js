@@ -24,3 +24,9 @@ export function generadorNumerosSinDecenas(totalDeNumeros, numeroMinimo, numeroM
     }
     return numeros;
 }
+
+//Funcion que muestra un numero agregando comas
+export function numeroConComas (numero) {
+    let numeroConComa = numero.toLocaleString('es-MX');
+    return numeroConComa
+}
