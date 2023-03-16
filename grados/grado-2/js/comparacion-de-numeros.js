@@ -45,12 +45,12 @@ function generaEjemploMayorQue() {
     "#mayor-que-ejemplos tbody"
   );
   for (let i = 0; i < 5; i++) {
-    let num1 = numeroAleatorio(1, 99);
-    let num2 = numeroAleatorio(1, 99);
+    let num1 = numeroAleatorio(1, 9999);
+    let num2 = numeroAleatorio(1, 9999);
     while (num1 < num2) {
-      num1 = numeroAleatorio(1, 99);
+      num1 = numeroAleatorio(1, 9999);
       if (num1 == num2) {
-        num1 = numeroAleatorio(1, 99);
+        num1 = numeroAleatorio(1, 9999);
       }
     }
     const tr = document.createElement("tr");
@@ -68,12 +68,12 @@ function generarEjemploMenorQue() {
     "#menor-que-ejemplos tbody"
   );
   for (let i = 0; i < 5; i++) {
-    let num1 = numeroAleatorio(1, 99);
-    let num2 = numeroAleatorio(1, 99);
+    let num1 = numeroAleatorio(1, 9999);
+    let num2 = numeroAleatorio(1, 9999);
     while (num1 > num2) {
-      num1 = numeroAleatorio(1, 99);
+      num1 = numeroAleatorio(1, 9999);
       if (num1 == num2) {
-        num1 = numeroAleatorio(1, 99);
+        num1 = numeroAleatorio(1, 9999);
       }
     }
     const tr = document.createElement("tr");
@@ -91,8 +91,8 @@ function generarEjemplosSimbolos() {
     "#may-men-igual-que-ejemplos tbody"
   );
   for (let i = 0; i < 5; i++) {
-    let num1 = numeroAleatorio(1, 99);
-    let num2 = numeroAleatorio(1, 99);
+    let num1 = numeroAleatorio(1, 9999);
+    let num2 = numeroAleatorio(1, 9999);
     const tr = document.createElement("tr");
     tbodyTableMayorMenorIgualQueEjemplos.appendChild(tr).innerHTML = `
         <td class="align-middle">${num1}</td>
