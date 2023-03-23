@@ -23,19 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
   recargarPagina();
 
   //Ejecucion de funciones en DOM
-  crea5Ejercicios1a99();
+  crea5Ejercicios1a9999();
 });
 
 //Funcion que genera 5 ejercicios aleatorios para ingresar respuesta en la lista suma10Ejercicios
-function crea5Ejercicios1a99() {
-  const listaSuma10Ejercicios = document.querySelector("#suma5Ejercicios2");
+function crea5Ejercicios1a9999() {
+  const listaSuma10Ejercicios = document.querySelector("#suma5Ejercicios");
   //Crea los numeros aleatorios donde la suma sea menor a 100
   for (let i = 1; i <= 5; i++) {
-    let numero1 = numeroAleatorio(1, 99);
-    let numero2 = numeroAleatorio(1, 99);
-    while (numero1 + numero2 >= 100) {
-      numero1 = numeroAleatorio(1, 99);
-      numero2 = numeroAleatorio(1, 99);
+    let numero1 = numeroAleatorio(1, 9999);
+    let numero2 = numeroAleatorio(1, 9999);
+    while (numero1 + numero2 >= 10_000) {
+      numero1 = numeroAleatorio(1, 9999);
+      numero2 = numeroAleatorio(1, 9999);
     }
     let suma = numero1 + numero2;
 
