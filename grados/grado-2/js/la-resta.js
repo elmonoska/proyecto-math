@@ -42,10 +42,13 @@ function resta5Ejercicios() {
 
     let numero1 = numeroAleatorio(1, 9999);
     let numero2 = numeroAleatorio(1, 9999);
-    while (numero1 - numero2 <= 0) {
-      numero1 = numeroAleatorio(1, 9999);
+    let resultado;
+    
+    if(numero1>numero2){
+      resultado = numero1-numero2;
+    }else{
+      resultado = numero2-numero1;
     }
-    let resultado = numero1 - numero2;
 
     //Insertando los elementos eh el html
     resta5Ejercicios.appendChild(
@@ -65,3 +68,5 @@ function resta5Ejercicios() {
     });
   }
 }
+
+
