@@ -47,7 +47,7 @@ function diasYMes() {
   const fechaActual = new Date();
   const diaActual = fechaActual.getDay() - 1;
   const diaDeMesActual = fechaActual.getDate();
-  const mesActual = fechaActual.getMonth() - 1;
+  const mesActual = fechaActual.getMonth();
   const diaActualLetra = dias[diaActual].toUpperCase();
   const mesActualLetra = meses[mesActual].toUpperCase();
 

@@ -9,6 +9,10 @@ import {
   animacionTitulo,
   recargarPagina,
 } from "../../../js/animacionesDOM.js";
+import { 
+  sonidoRespuestaCorrecta,
+  sonidoRespuestaIncorrecta,
+} from "../../../js/sonidos-y-audiosDOM.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   animacionTitulo();
@@ -61,12 +65,12 @@ function resta5Ejercicios() {
       if (parseInt(event.target.value) === resultado) {
         inputText.classList =
           "border border-success bg-success bg-opacity-25 input-group-text p-3 shadow w-50 mx-auto";
-      } else {
-        inputText.classList =
+          sonidoRespuestaCorrecta('../../../audio/souds/correct.ogg')
+        } else {
+          inputText.classList =
           "border border-danger bg-danger bg-opacity-25 input-group-text p-3 shadow w-50 mx-auto";
+          sonidoRespuestaIncorrecta('../../../audio/souds/incorrect.ogg')
       }
     });
   }
 }
-
-
